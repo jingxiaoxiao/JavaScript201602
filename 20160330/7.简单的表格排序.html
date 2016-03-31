@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <title></title>
     <style type="text/css">
-        #tab{
+        #tab {
             border-collapse: collapse;
-            border:1px solid red;
+            border: 1px solid red;
         }
-        #tab td,#tab th{
-            border:1px solid red;
+
+        #tab td, #tab th {
+            border: 1px solid red;
             height: 40px;
             line-height: 40px;
             text-align: center;
@@ -20,9 +21,9 @@
 <table id="tab" width="700">
     <thead>
     <tr>
-    <th>姓名</th>
-    <th>年龄</th>
-    <th>分数</th>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>分数</th>
     </tr>
     </thead>
     <tbody>
@@ -61,15 +62,15 @@
     var ary = listToArray(oRows);
     //console.log(ary);//[tr, tr, tr, tr]
     //3.按照年龄这一列进行排序
-    ary.sort(function(a,b){
+    ary.sort(function (a, b) {
         //a.cells 获取一行里(tr)的所有的列(td)(元素结合)
         //按照第二列进行排序的,第二列的索引是1
         //a.cells[1]  <td>...</td>
         return a.cells[1].innerHTML - b.cells[1].innerHTML;
     })
-  //添加到页面上去
+    //添加到页面上去
     var fg = document.createDocumentFragment();//文档碎片
-    for(var i = 0;i<ary.length;i++){
+    for (var i = 0; i < ary.length; i++) {
         fg.appendChild(ary[i])
     }
     oBody.appendChild(fg)//页面只会渲染一次

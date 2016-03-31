@@ -6,19 +6,19 @@
 </head>
 <body>
 <script>
-    var ary = [{"name":"宫之晓","age":18},
-        {name:"智力超","age":"19px"},
-        {name:"张琦飞","age":3},
-        {name:"于金超","age":33}];
+    var ary = [{"name": "宫之晓", "age": 18},
+        {name: "智力超", "age": "19px"},
+        {name: "张琦飞", "age": 3},
+        {name: "于金超", "age": 33}];
     //按照年龄从小到大排
-//    ary.sort(function(a,b){
-//        //a表示前一项 b表示后一项
-//       return parseFloat(a.age) - parseFloat(b.age)
-//    })
-//    console.log(ary);
+    //    ary.sort(function(a,b){
+    //        //a表示前一项 b表示后一项
+    //       return parseFloat(a.age) - parseFloat(b.age)
+    //    })
+    //    console.log(ary);
     //name:gongzhixiao name:zhilichao zhang
     //按照姓名从小到大排(如果比较的每一项非数字的时,我们用localeCompare比较)
-    ary.sort(function(a,b){
+    ary.sort(function (a, b) {
         //a表示前一项 b表示后一项
         return a.name.localeCompare(b.name);//按照字母在26个字母表中的顺序排列,先比较第一个,如果第一个相同再比较第二个.......
     })

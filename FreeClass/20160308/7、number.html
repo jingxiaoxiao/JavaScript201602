@@ -32,7 +32,7 @@
     //console.log(Number("12"));//->12
     //console.log(Number("12px"));//->NaN 如果是把一个字符串转换为数字,只有字符串中的每一个字符都是有效的数字字符,才可以正常转换,相反只要有一个不是有效的数字字符,最后的结果就是NaN
 
-    //->非严格转换:parseInt/parseFloat 从左到右一次查找,把有效的数字字符转换为数字,但是一但遇到一个非有效的数字字符,立即停止查找(不管后面是否还有都不在查找了)
+    //->非严格转换:parseInt/parseFloat 从左到右一次查找,把有效的数字字符转换为数字,但是一但遇到一个非有效的数字字符,立即停止查找(不管后面是否还有都不再查找了)
     //    console.log(parseInt("12px"));//->12
     //    console.log(parseInt("12px13"));//->12
     //    console.log(parseInt("px13"));//->NaN
