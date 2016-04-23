@@ -54,12 +54,12 @@
             strL: parseFloat($(this).css("left")),
             strT: parseFloat($(this).css("top"))
         });
-
         //->只有先触发mousedown这个行为,才给当前的元素的mousemove/mouseup行为绑对应的操作方法
         if (this.setCapture) {
             this.setCapture();//->把当前的盒子和鼠标绑定在一起,在谷歌浏览器不兼容,IE和火狐都兼容
         }
         $(this).on("mousemove", move).on("mouseup", up);
+
     }
 
     function move(e) {
