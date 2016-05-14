@@ -1,6 +1,7 @@
 var http = require("http");
 var url = require("url");
 var fs = require("fs");
+
 var server = http.createServer(function (request, response) {
     var urlObj = url.parse(request.url, true);
     var pathname = urlObj["pathname"], query = urlObj["query"];
@@ -49,4 +50,5 @@ var server = http.createServer(function (request, response) {
         response.end(JSON.stringify(res));//->我们返回给客户端的数据内容需要是一个JSON格式的字符串才可以
     }
 });
+
 server.listen(80);
