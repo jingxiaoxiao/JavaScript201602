@@ -35,6 +35,7 @@ function fnLoad(){
     arr.forEach(function(){
         var oImg = new Image();
         oImg.src ="images/"+arguments[0];
+        console.log(arguments);
         oImg.onload = function(){
             n++;
             process.style.width = n/arr.length*100+"%";
@@ -125,6 +126,7 @@ function fnCube(){
     document.addEventListener("touchmove",move,false);
     document.addEventListener("touchend",end,false);
     function start(e){
+        console.log(this);
         this.startTouch = {
             x: e.changedTouches[0].pageX,
             y: e.changedTouches[0].pageY
