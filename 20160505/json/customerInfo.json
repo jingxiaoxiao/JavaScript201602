@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [
   {
     "name": "李曈检",
@@ -28,3 +29,6 @@
     "id": 5
   }
 ]
+=======
+[{"name":"哈哈哈","age":"100","tel":"呵呵呵","address":"嘿嘿嘿","id":"3"},{"name":"dawdawd","age":"dawd","tel":"dawd","address":"dwadaw","id":4}]
+>>>>>>> 98dbff1b1149dcb40193abde4f4cb68b395d374a
